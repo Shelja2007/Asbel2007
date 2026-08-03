@@ -9,6 +9,8 @@ On:
         runs-on: ubuntu-latest
         steps:
            -name: Checkout repository
+            uses: actions/checkout@v3
+           -name: Set up python
             uses: actions/setup-python@v4
             with:
                 python-version: '3.x'
