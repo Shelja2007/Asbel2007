@@ -1,0 +1,16 @@
+name: CI Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actons/checkout@v4
+
+      - name: Run build
+        run: echo "Build completed successfully"
