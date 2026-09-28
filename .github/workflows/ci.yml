@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actons/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Run build
         run: echo "Build completed successfully"
